@@ -1,11 +1,13 @@
 body {
   font-size: 16px;
-  background: url("../media/pics/Yamaha_Oak_Drumset_-_top.jpg") bottom center;
+  background: #000;
+  background-image: url("../media/pics/Yamaha_Oak_Drumset_-_top.jpg");
+  background-position: bottom center;
   background-size: cover;
-  
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .keys {
@@ -17,20 +19,22 @@ body {
 }
 
 .key {
+  color: white;
+  background: rgba(255,255,255,0.1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
   border: 0.5rem solid white;
   border-radius: 1.5rem;
   margin: 0.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
   width: 10rem;
-  background: rgba(255,255,255,0.1);
   text-align: center;
-  color: white;
-  text-shadow: 
-  -1px -1px 0 #000,  
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
 }
 
 .playing {
@@ -43,6 +47,7 @@ body {
 kbd {
   display: block;
   font-size: 4rem;
+  font-family: inherit;
 }
 
 .sound {
